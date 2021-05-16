@@ -1,7 +1,7 @@
 ######################
 # Site configuration #
 ######################
-title: "John Peart" 
+title: "Image Store"
 description: "I’m John Peart. I’m a policy professional with an interest in technology, services and diversity. I write about all sorts of things, and I build things in code."
 author: "John Peart"
 
@@ -11,7 +11,7 @@ url: "http://localhost:4000"
 ####################
 # Feature settings #
 ####################
-menu-subdomain: false
+menu-subdomain: true
 menu-header: true
 menu-footer: true
 analytics: false
@@ -46,20 +46,12 @@ github-handle:  "johnpeart"
 # Collections #
 ###############
 
-collections:
-  archive:
-    output: true
-    permalink: /archive/:path/
-    defaults:
-      values:
-        layout: blog/post
-  guides:
-    output: true
-    permalink: /guide/:title/
-    defaults:
-      values:
-        layout: manuals/post
-             
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
 ##################
 # Build settings #
 ##################
@@ -73,9 +65,6 @@ sass:
 
 plugins:
 - jekyll-remote-theme
-- jekyll-sitemap
-- jekyll-feed
-- jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

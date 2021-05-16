@@ -1,12 +1,12 @@
 ######################
 # Site configuration #
 ######################
-title: "John Peart" 
+title: "John Peart"
 description: "I’m John Peart. I’m a policy professional with an interest in technology, services and diversity. I write about all sorts of things, and I build things in code."
 author: "John Peart"
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.johnpe.art"
+url: "https://image.johnpe.art"
 
 ####################
 # Feature settings #
@@ -14,7 +14,7 @@ url: "http://www.johnpe.art"
 menu-subdomain: false
 menu-header: true
 menu-footer: true
-analytics: false
+analytics: true
 
 ###############
 # Asset paths #
@@ -46,20 +46,12 @@ github-handle:  "johnpeart"
 # Collections #
 ###############
 
-collections:
-  archive:
-    output: true
-    permalink: /archive/:path/
-    defaults:
-      values:
-        layout: blog/post
-  guides:
-    output: true
-    permalink: /guide/:title/
-    defaults:
-      values:
-        layout: manuals/post
-             
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
 ##################
 # Build settings #
 ##################
