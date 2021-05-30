@@ -48,9 +48,17 @@ github-handle:  "johnpeart"
 
 defaults:
   - scope:
-      path: "assets/images"
+      path: "assets/images/posts"
     values:
       image: true
+      image-collection: "posts"
+      label: "blog posts"
+  - scope:
+      path: "assets/images/guides"
+    values:
+      image: true
+      image-collection: "guides"
+      label: "guides"
 
 ##################
 # Build settings #
