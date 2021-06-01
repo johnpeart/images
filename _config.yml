@@ -59,6 +59,12 @@ defaults:
       image: true
       image-collection: "guides"
       label: "guides"
+  - scope:
+      path: "assets/images/social"
+    values:
+      image: true
+      image-collection: "social"
+      label: "social graph"
 
 ##################
 # Build settings #
