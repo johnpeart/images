@@ -1,7 +1,7 @@
 ######################
 # Site configuration #
 ######################
-title: "John Peart"
+title: "Image Store"
 description: "I’m John Peart. I’m a policy professional with an interest in technology, services and diversity. I write about all sorts of things, and I build things in code."
 author: "John Peart"
 
@@ -11,7 +11,7 @@ url: "https://image.johnpe.art"
 ####################
 # Feature settings #
 ####################
-menu-subdomain: false
+menu-subdomain: true
 menu-header: true
 menu-footer: true
 analytics: true
